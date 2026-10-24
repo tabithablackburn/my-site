@@ -1,0 +1,169 @@
+
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="CV | Tabitha Blackburn" description="CV of Tabitha Blackburn, researcher in design history and PhD student at the V&A and UCL." />
+		<style>
+			.layout {
+				padding: 3rem 12vw 7rem;
+			}
+			.layout h1 {
+				font-size: clamp(3.5rem, 9vw, 7rem);
+				line-height: 1;
+				margin: 0 0 2rem 0;
+			}
+			.layout h2 {
+				font-size: 2.4rem;
+				line-height: 1.2;
+				margin: 3rem 0 1.5rem 0;
+				padding-top: 1rem;
+				border-top: 1px solid #960714;
+			}
+			.entry {
+				display: grid;
+				grid-template-columns: 11rem 1fr;
+				gap: 1.5rem;
+				margin-bottom: 2.25rem;
+				max-width: 56rem;
+			}
+			.when {
+				font-style: italic;
+				font-size: 1.15rem;
+				padding-top: 0.4rem;
+			}
+			.what h3 {
+				font-size: 1.9rem;
+				line-height: 1.2;
+				margin: 0 0 0.2rem 0;
+			}
+			.what p {
+				font-size: 1.15rem;
+				line-height: 1.5;
+				margin: 0 0 0.75rem 0;
+			}
+			.what .role {
+				font-size: 1.3rem;
+				font-weight: 600;
+				margin-bottom: 0.4rem;
+			}
+			.contact {
+				font-size: 1.3rem;
+				max-width: 46rem;
+			}
+			@media (max-width: 700px) {
+				.layout {
+					padding: 2rem 1.5rem 5rem;
+				}
+				.entry {
+					grid-template-columns: 1fr;
+					gap: 0.25rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="layout">
+				<h1>CV</h1>
+
+				<h2>Education</h2>
+
+				<div class="entry">
+					<div class="when">2026 &ndash; </div>
+					<div class="what">
+						<h3>V&amp;A / UCL</h3>
+						<p class="role">AHRC-funded PhD</p>
+						<p>Project title: ‘Invisible Hands: Migrant Labour and British Craft in the Long Eighteenth Century’</p>
+
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="when">2023 &ndash; 2024</div>
+					<div class="what">
+						<h3>V&amp;A / Royal College of Art</h3>
+						<p class="role">MA in History of Design</p>
+						<p>Distinction (dissertation)</p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="when">2020 &ndash; 2023</div>
+					<div class="what">
+						<h3>University of Cambridge</h3>
+						<p class="role">BA in History of Art</p>
+						<p>First-Class</p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="when">2019 &ndash; 2020</div>
+					<div class="what">
+						<h3>Central Saint Martin's</h3>
+						<p class="role">Foundation Diploma in Art &amp; Design</p>
+						<p>Spatial Design pathway</p>
+					</div>
+				</div>
+
+				<h2>Experience</h2>
+
+				<div class="entry">
+					<div class="when">2026</div>
+					<div class="what">
+						<h3>Condé Nast</h3>
+						<p class="role">Archive Assistant</p>
+						<p>
+							At Condé Nast, my role involved researching and working with the historical collections of fashion and design magazines such as British Vogue, The World of Interiors and House &amp; Garden, as well as the Cecil Beaton Archive.
+						</p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="when">2024 &ndash; 2025</div>
+					<div class="what">
+						<h3>Phillips</h3>
+						<p class="role">Intern, Design</p>
+						<p>
+							For Phillips, I researched and wrote catalogue essays on twentieth-century design featuring in the bi-annual London Design auctions.
+						</p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="when">2024</div>
+					<div class="what">
+						<h3>V&amp;A</h3>
+						<p class="role">Furniture Department Placement</p>
+						<p>
+							In August 2024, I assisted the V&amp;A's furniture curator with the initial planning of the 2025 redisplay of the furniture galleries.
+						</p>
+						<p class="role">Textiles Department Placement</p>
+						<p>
+							From June to August 2024, I assisted the V&amp;A's curator of textiles in researching the museum's collection of seventeenth- and eighteenth-century English tapestries.
+						</p>
+					</div>
+				</div>
+
+				<div class="entry">
+					<div class="when">2022; 2023</div>
+					<div class="what">
+						<h3>Pooky Lighting</h3>
+						<p class="role">Showroom Artist and Designer</p>
+						<p>
+							I spent two summers as a freelance artist and designer for Pooky Lighting, working on their stand at the Decorex furniture fair. In 2022, I designed and hand-painted neoclassical features around the stand, and in 2023, I designed a 1960s inspired geometric tiled floor still used by Pooky at Decorex today.
+						</p>
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

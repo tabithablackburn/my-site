@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const allPosts = await getCollection('blog');
+allPosts.sort(function (a, b) {
+	return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+});
+
+const items = allPosts.slice(0, 3).map(function (post) {
+	return {
+		href: '/blog/' + post.id + '/',
+		title: post.data.title,
+		image: post.data.heroImage ? post.data.heroImage.src : '',
+		date: post.data.pubDate.toLocaleDateString('en-GB', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+		}),
+	};
+});
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="intro">
+				<h1>Tabitha Blackburn</h1>
+				<p>
+					I am a researcher in furniture, interior, and design history, currently working on a collaborative PhD at the Victoria and Albert Museum (V&A) and UCL.
+				</p>
+				<p>
+					My PhD focuses on craft and migration in Britain in the long eighteenth century. It is funded by the Arts and Humanities Research Council (AHRC) via the Collaborative Doctoral Partnership (CDP) scheme.
+				</p>
+			</section>
+
+			<section class="latest">
+				<h2>Latest Posts</h2>
+				<ul class="cards">
+					{items.map((item) => (
+						<li class="card">
+							<a href={item.href}>
+								{item.image && <img src={item.image} alt="" />}
+								<h3>{item.title}</h3>
+								<p class="date">{item.date}</p>
+							</a>
+						</li>
+					))}
+				</ul>
+				<p class="more"><a href="/blog">All Posts &rarr;</a></p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
