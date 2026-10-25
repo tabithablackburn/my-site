@@ -12,7 +12,6 @@ const blog = defineCollection({
 			heroImage: image().optional(),
 			category: z
 				.enum([
-					'Long 18th Century',
 					'20th Century',
 					'Set Decoration',
 				])
