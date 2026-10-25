@@ -1,3 +1,4 @@
+
 ---
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
@@ -6,7 +7,24 @@ import Header from '../../components/Header.astro';
 
 const categories = ['Long 18th Century', '20th Century', 'Set Decoration'];
 
+const filmTitles = [
+  'The Moonwalkers: A Journey with Tom Hanks',
+  '2001: A Space Odyssey',
+  'Wuthering Heights',
+  'Barbarella',
+];
+
+const filmTitlePattern = new RegExp(
+	`(${filmTitles
+		.slice()
+		.sort((a, b) => b.length - a.length)
+		.map((film) => film.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+		.join('|')})`,
+	'gi'
+);
+
 const allPosts = await getCollection('blog');
+
 allPosts.sort(function (a, b) {
 	return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
 });
@@ -15,6 +33,7 @@ const items = allPosts.map(function (post) {
 	return {
 		href: '/blog/' + post.id + '/',
 		title: post.data.title,
+		titleParts: post.data.title.split(filmTitlePattern),
 		summary: post.data.description,
 		category: post.data.category || '',
 		image: post.data.heroImage ? post.data.heroImage.src : '',
@@ -25,6 +44,12 @@ const items = allPosts.map(function (post) {
 		}),
 	};
 });
+
+function isFilmTitle(part: string) {
+	return filmTitles.some(
+		(film) => film.toLowerCase() === part.toLowerCase()
+	);
+}
 ---
 
 <!doctype html>
@@ -147,7 +172,11 @@ const items = allPosts.map(function (post) {
 									<span>{item.date}</span>
 									{item.category && <span class="pill">{item.category}</span>}
 								</div>
-								<h2>{item.title}</h2>
+								<h2>
+									{item.titleParts.map((part) =>
+										isFilmTitle(part) ? <em>{part}</em> : part
+									)}
+								</h2>
 								<p class="summary">{item.summary}</p>
 							</a>
 						</li>
@@ -162,19 +191,28 @@ const items = allPosts.map(function (post) {
 			const tabs = document.querySelectorAll('.tab');
 			const cards = document.querySelectorAll('.item');
 			const empty = document.getElementById('empty');
+
 			tabs.forEach(function (tab) {
 				tab.addEventListener('click', function () {
 					const cat = tab.getAttribute('data-cat');
 					let shown = 0;
+
 					tabs.forEach(function (t) {
 						t.classList.remove('active');
 					});
+
 					tab.classList.add('active');
+
 					cards.forEach(function (card) {
-						const show = cat === 'all' || card.getAttribute('data-cat') === cat;
+						const show =
+							cat === 'all' ||
+							card.getAttribute('data-cat') === cat;
+
 						card.hidden = !show;
+
 						if (show) shown++;
 					});
+
 					if (empty) empty.hidden = shown > 0;
 				});
 			});

@@ -5,11 +5,7 @@ pubDate: 2026-02-23
 updatedDate: 2026-02-28
 category: "Set Decoration"
 heroImage: "./wuthering-heights-cover.jpg"
----
-
-![The archway connecting the Earnshaw family home, Wuthering Heights, to the Yorkshire moors, clad in uniform, glossy tiles.](./wuthering-heights-cover.jpg)
-
-<p class="caption">The archway connecting the Earnshaw family home, Wuthering Heights, to the Yorkshire moors, clad in uniform, glossy tiles. Image: Jaap Buitendijk / Warner Bros.</p>
+---<p class="caption">The archway connecting the Earnshaw family home, Wuthering Heights, to the Yorkshire moors, clad in uniform, glossy tiles. Image: Jaap Buitendijk / Warner Bros.</p>
 
 Emerald Fennell’s *Wuthering Heights* (2026) is designed to provoke in both form and content. It does not aspire to offer a faithful adaptation of Emily Brontë’s 1847 novel, but aims, instead, to envisage a love story between Cathy and Heathcliff through the lens of a 14-year-old Fennell, reading the book in the 1990s.
 
@@ -50,6 +46,7 @@ With the new sets comes an uncomfortable visual adjustment from historical refer
 
 <p class="caption">Young Heathcliff, played by Owen Cooper, and young Cathy, played by Charlotte Mellington, at the rough-hewn Wuthering Heights set, wearing costumes that playfully refashion historical Regency period dress. Image: Jaap Buitendijk / Warner Bros.</p>
 
+
 <div class="image-pair">
   <figure>
     <img src="/src/content/blog/wuthering-heights/cathy-pink-cellophane-dress.jpg" alt="Cathy Earnshaw wearing an iridescent pink cellophane dress." />
@@ -73,6 +70,7 @@ In fact, the only uncanny features in the pre-Thrushcross sets are the building 
 
 <p class="caption">The exterior of the main house at Wuthering Heights, clad in uniform rectangular tiles and surrounded by asymmetrical masses of grey rock. Image: Jaap Buitendijk / Warner Bros.</p>
 
+
 According to both Fennell and Davies, textural decisions were made in consideration of their emotive effect in the first instance, and any relation to the source material or historical context in the second. Yet even in light of this, the mysteriously clad buildings at Wuthering Heights do not represent the only instance in which such material choices seem ungrounded.
 
 Around the middle of the film, as Cathy moves to Thrushcross Grange and the rooms, drenched in scintillating synthetic materials, are at their most highly stylised point, such fabrics as the blood-red faux fur that lines the underside of the marble Grand Staircase seem to have been selected for the sole reason of their audacity.
@@ -84,6 +82,7 @@ Unapologetic anachronisms in the set and costume design are entirely justified a
 ![Cathy Earnshaw wearing a white winter-style dress with sheer glittery sleeves in the drawing room at Thrushcross Grange.](./thrushcross-drawing-room.jpg)
 
 <p class="caption">Cathy Earnshaw, played by Margot Robbie, wearing a white winter-style dress with sheer glittery sleeves. She stands in the drawing room at Thrushcross Grange, with its crystalline, plastic-panelled walls. Image: Jaap Buitendijk / Warner Bros.</p>
+
 
 A discussion of the visual fabric of Emerald Fennell’s *Wuthering Heights* would not be complete without an acknowledgement of the multiple points at which the design flourishes. One notable triumph within the set design is the dining room at Thrushcross Grange, which is particularly striking for the detail of the hemispherical plastic ornaments arranged, festoon-like, in the manner of Regency plasterwork around the silvered walls. Cathy’s bedroom, too, deserves praise.
 
@@ -108,6 +107,6 @@ In terms of set design, it is fearless, recasting Regency-inspired forms in arti
 
 Ultimately, out-of-place components within the sets, unfounded material choices, and awkwardly handled visual paradoxes outweigh the high points, leaving the audience with an overall impression of stylistic incoherence for which the film, regrettably, suffers.
 
-## References
+**References**
 
 Architectural Digest, ‘Inside Heathcliff’s Gothic “Wuthering Heights” Home’, video, 6 February 2026, YouTube, 00:08:23. Accessed 23 February 2026.

@@ -10,315 +10,569 @@ import Header from '../components/Header.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const {
-	title,
-	description,
-	pubDate,
-	updatedDate,
-	heroImage,
-	category,
+    title,
+    description,
+    pubDate,
+    updatedDate,
+    heroImage,
+    category,
 } = Astro.props;
+
+/* Film titles to italicise automatically in article headings. */
+const filmTitles = [
+    'The Moonwalkers: A Journey with Tom Hanks',
+    '2001: A Space Odyssey',
+    'Wuthering Heights',
+    'Barbarella',
+];
+
+/* Match film titles, longest first, without altering the title text. */
+const filmTitlePattern = new RegExp(
+    `(${filmTitles
+        .slice()
+        .sort((a, b) => b.length - a.length)
+        .map((film) => film.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+        .join('|')})`,
+    'gi'
+);
+
+const titleParts = title.split(filmTitlePattern);
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			article {
-				width: 100%;
-				margin: 0;
-				padding: 0 0 5rem;
-			}
+    <head>
+        <BaseHead title={title} description={description} />
 
-			.article-header {
-				padding: 3rem 12vw 2rem;
-				max-width: 100%;
-			}
+        <style>
+            article {
+                width: 100%;
+                margin: 0;
+                padding: 0 0 5rem;
+            }
 
-			.category {
-				margin: 0 0 1rem;
-				font-size: 1rem;
-				line-height: 1.3;
-				text-transform: uppercase;
-				letter-spacing: 0.08em;
-			}
+            .article-header {
+                padding: 3rem 12vw 2rem;
+                max-width: 100%;
+            }
 
-			.title {
-				max-width: 1100px;
-				margin: 0 0 1.5rem;
-				font-size: clamp(2.8rem, 7vw, 5.5rem);
-				font-weight: 400;
-				line-height: 1.05;
-				text-align: left;
-			}
+            .category {
+                margin: 0 0 1rem;
+                font-size: 1rem;
+                line-height: 1.3;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+            }
 
-			.description {
-				max-width: 800px;
-				margin: 0 0 1.5rem;
-				font-size: 1.5rem;
-				line-height: 1.4;
-			}
+            .title {
+                max-width: 1100px;
+                margin: 0 0 1.5rem;
+                font-size: clamp(2.8rem, 7vw, 5.5rem);
+                font-weight: 400;
+                line-height: 1.05;
+                text-align: left;
+            }
 
-			.date {
-				margin: 0 0 1.5rem;
-				font-size: 1.1rem;
-				line-height: 1.5;
-			}
+            .description {
+                max-width: 800px;
+                margin: 0 0 1.5rem;
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
 
-			.last-updated-on {
-				margin-top: 0.25rem;
-				font-style: italic;
-			}
+            .date {
+                margin: 0 0 1.5rem;
+                font-size: 1.1rem;
+                line-height: 1.5;
+            }
 
-			/* Cover image */
-			.hero-image {
-				width: calc(100% - 3rem);
-				max-width: 900px;
-				margin: 0 auto 2rem;
-			}
+            .last-updated-on {
+                margin-top: 0.25rem;
+                font-style: italic;
+            }
 
-			.hero-image img {
-				display: block;
-				width: 100%;
-				height: auto;
-				max-height: none;
-				object-fit: unset;
-			}
+            /* Cover image */
+            .hero-image {
+                width: calc(100% - 3rem);
+                max-width: 900px;
+                margin: 0 auto 2rem;
+            }
 
-			/* Main article text */
-			.prose {
-				width: 100%;
-				max-width: 760px;
-				margin: 0 auto;
-				padding: 0 1.5rem;
-				color: var(--red);
-				font-size: 1.3rem;
-				line-height: 1.7;
-			}
+            .hero-image img {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-height: none;
+                object-fit: unset;
+            }
 
-			.prose :global(p) {
-				margin: 0 0 1.5rem;
-			}
+            /* Main article body */
+            .prose {
+                width: 100%;
+                max-width: 760px;
+                margin: 0 auto;
+                padding: 0 1.5rem;
+                color: #000000;
+                font-size: 1.3rem;
+                line-height: 1.7;
+            }
 
-			/* Image captions */
-			.prose :global(.caption) {
-				font-size: 1.1rem !important;
-				line-height: 1.5;
-				font-style: italic;
-				margin: 0.5rem 0 0;
-			}
+            .prose :global(p),
+            .prose :global(li),
+            .prose :global(blockquote),
+            .prose :global(h2),
+            .prose :global(h3),
+            .prose :global(h4),
+            .prose :global(figcaption),
+            .prose :global(.caption) {
+                color: #000000;
+            }
 
-			/* Two images side by side */
-			.prose :global(.image-pair) {
-				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-				gap: 1.5rem;
-				width: 100%;
-				margin: 2rem 0;
-				align-items: start;
-			}
+            .prose :global(p) {
+                margin: 0 0 1.5rem;
+            }
 
-			.prose :global(.image-pair figure) {
-				min-width: 0;
-				margin: 0;
-			}
+            /* Image captions */
+            .prose :global(.caption) {
+                font-size: 1.1rem !important;
+                line-height: 1.5;
+                font-style: italic;
+                margin: 0.5rem 0 0;
+            }
 
-			.prose :global(.image-pair img) {
-				display: block;
-				width: 100%;
-				max-width: 100%;
-				height: auto;
-				margin: 0;
-				object-fit: contain;
-			}
+            /* Extra space after standalone captions */
+            .prose > :global(p.caption) {
+                margin-bottom: 2.5rem;
+            }
 
-			.prose :global(.image-pair .caption) {
-				margin-top: 0.5rem;
-			}
+            /* Two images side by side, each with its own caption */
+            .prose :global(.image-pair) {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.5rem;
+                width: 100%;
+                margin: 2rem 0;
+                align-items: start;
+            }
 
-			.prose :global(h2) {
-				margin: 3rem 0 1rem;
-				font-size: 2.4rem;
-				line-height: 1.2;
-				font-weight: 400;
-			}
+            .prose :global(.image-pair figure) {
+                min-width: 0;
+                margin: 0;
+            }
 
-			.prose :global(h3) {
-				margin: 2.5rem 0 0.75rem;
-				font-size: 1.8rem;
-				line-height: 1.3;
-				font-weight: 400;
-			}
+            .prose :global(.image-pair img) {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                margin: 0;
+                object-fit: contain;
+            }
 
-			.prose :global(h4) {
-				margin: 2rem 0 0.75rem;
-				font-size: 1.4rem;
-				line-height: 1.4;
-				font-weight: 600;
-			}
+            .prose :global(.image-pair .caption) {
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+            }
 
-			.prose :global(a) {
-				color: var(--red);
-				text-decoration: underline;
-				text-underline-offset: 0.15em;
-			}
+            /* Two images side by side with one shared caption */
+            .prose :global(.image-pair-caption) {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                column-gap: 1.5rem;
+                row-gap: 0;
+                width: 100%;
+                margin: 2rem 0;
+                align-items: start;
+            }
 
-			.prose :global(a:hover) {
-				color: var(--text);
-			}
+            .prose :global(.image-pair-caption figure) {
+                min-width: 0;
+                margin: 0;
+            }
 
-			/* Individual images in the article */
-			.prose :global(img) {
-				display: block;
-				width: auto;
-				max-width: 100%;
-				height: auto;
-				object-fit: contain;
-				margin: 2rem auto;
-			}
+            .prose :global(.image-pair-caption img) {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                margin: 0;
+                object-fit: contain;
+            }
 
-			.prose :global(figure) {
-				margin: 2rem 0;
-			}
+            .prose :global(.image-pair-caption > .caption) {
+                grid-column: 1 / -1;
+                width: 100%;
+                margin: 0.5rem 0 0;
+            }
 
-			.prose :global(figcaption) {
-				margin-top: 0.5rem;
-			}
+            .prose :global(h2) {
+                margin: 3rem 0 1rem;
+                font-size: 2.4rem;
+                line-height: 1.2;
+                font-weight: 400;
+            }
 
-			.prose :global(blockquote) {
-				margin: 2rem 0;
-				padding: 0 0 0 1.25rem;
-				border-left: 3px solid var(--red);
-				font-size: 1.4rem;
-				line-height: 1.5;
-			}
+            .prose :global(h3) {
+                margin: 2.5rem 0 0.75rem;
+                font-size: 1.8rem;
+                line-height: 1.3;
+                font-weight: 400;
+            }
 
-			.prose :global(ul),
-			.prose :global(ol) {
-				margin: 0 0 1.5rem;
-				padding-left: 1.5rem;
-			}
+            .prose :global(h4) {
+                margin: 2rem 0 0.75rem;
+                font-size: 1.4rem;
+                line-height: 1.4;
+                font-weight: 600;
+            }
 
-			.prose :global(li) {
-				margin-bottom: 0.5rem;
-			}
+            /* Links throughout the article body */
+            .prose :global(a),
+            .prose :global(a:visited),
+            .prose :global(a:hover),
+            .prose :global(a:active) {
+                color: #000000;
+                text-decoration: underline;
+                text-underline-offset: 0.15em;
+            }
 
-			.prose :global(hr) {
-				margin: 2rem 0;
-				border: 0;
-				border-top: 1px solid var(--red);
-			}
+            /* Individual article images */
+            .prose :global(img) {
+                display: block;
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+                margin: 2rem auto;
+            }
 
-			.back-link {
-				max-width: 760px;
-				margin: 3rem auto 0;
-				padding: 0 1.5rem;
-			}
+            .prose :global(figure) {
+                margin: 2rem 0;
+            }
 
-			.back-link a {
-				color: var(--red);
-				text-decoration: underline;
-				text-underline-offset: 0.15em;
-			}
+            .prose :global(figcaption) {
+                margin-top: 0.5rem;
+            }
 
-			.back-link a:hover {
-				color: var(--text);
-			}
+            .prose :global(blockquote) {
+                margin: 2rem 0;
+                padding: 0 0 0 1.25rem;
+                border-left: 3px solid #000000;
+                font-size: 1.4rem;
+                line-height: 1.5;
+            }
 
-			@media (max-width: 700px) {
-				article {
-					padding-bottom: 3rem;
-				}
+            .prose :global(ul),
+            .prose :global(ol) {
+                margin: 0 0 1.5rem;
+                padding-left: 1.5rem;
+            }
 
-				.article-header {
-					padding: 2rem 1.5rem 1.5rem;
-				}
+            .prose :global(li) {
+                margin-bottom: 0.5rem;
+            }
 
-				.title {
-					font-size: clamp(2.5rem, 11vw, 4rem);
-				}
+            .prose :global(hr) {
+                margin: 2rem 0;
+                border: 0;
+                border-top: 1px solid #000000;
+            }
 
-				.description {
-					font-size: 1.3rem;
-				}
+            /* Make article and hero images visibly clickable */
+            .hero-image img,
+            .prose :global(img) {
+                cursor: zoom-in;
+            }
 
-				.prose {
-					font-size: 1.15rem;
-					padding: 0 1.5rem;
-				}
+            /* Full-screen image viewer */
+            .lightbox {
+                position: fixed;
+                inset: 0;
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3rem;
+                background: rgba(0, 0, 0, 0.94);
+                opacity: 1;
+                visibility: visible;
+                transition:
+                    opacity 180ms ease,
+                    visibility 180ms ease;
+            }
 
-				.prose :global(h2) {
-					font-size: 2rem;
-				}
+            .lightbox[hidden] {
+                display: none;
+            }
 
-				.prose :global(h3) {
-					font-size: 1.6rem;
-				}
+            .lightbox-image {
+                display: block;
+                max-width: 94vw;
+                max-height: 90vh;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+                margin: 0;
+                cursor: default;
+            }
 
-				.prose :global(.image-pair) {
-					gap: 0.75rem;
-				}
+            .lightbox-close {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                height: 3rem;
+                padding: 0;
+                border: 0;
+                background: transparent;
+                color: #ffffff;
+                font: inherit;
+                font-size: 2.5rem;
+                line-height: 1;
+                cursor: pointer;
+            }
 
-				.prose :global(.image-pair .caption) {
-					font-size: 0.95rem !important;
-					line-height: 1.4;
-				}
+            .lightbox-close:hover {
+                opacity: 0.7;
+            }
 
-				.hero-image {
-					width: calc(100% - 2.5rem);
-					margin-bottom: 2rem;
-				}
+            .lightbox-close:focus-visible {
+                outline: 2px solid #ffffff;
+                outline-offset: 4px;
+            }
 
-				.back-link {
-					padding: 0 1.5rem;
-				}
-			}
-		</style>
-	</head>
+            .back-link {
+                max-width: 760px;
+                margin: 3rem auto 0;
+                padding: 0 1.5rem;
+            }
 
-	<body>
-		<Header />
+            .back-link a {
+                color: #960714;
+                text-decoration: underline;
+                text-underline-offset: 0.15em;
+            }
 
-		<main>
-			<article>
-				<header class="article-header">
-					{category && <p class="category">{category}</p>}
+            .back-link a:hover {
+                color: #960714;
+            }
 
-					<h1 class="title">{title}</h1>
+            @media (max-width: 700px) {
+                article {
+                    padding-bottom: 3rem;
+                }
 
-					{description && (
-						<p class="description">{description}</p>
-					)}
+                .article-header {
+                    padding: 2rem 1.5rem 1.5rem;
+                }
 
-					<div class="date">
-						<FormattedDate date={pubDate} />
+                .title {
+                    font-size: clamp(2.5rem, 11vw, 4rem);
+                }
 
-						{updatedDate && (
-							<div class="last-updated-on">
-								Last updated on <FormattedDate date={updatedDate} />
-							</div>
-						)}
-					</div>
+                .description {
+                    font-size: 1.3rem;
+                }
 
-					<hr />
-				</header>
+                .prose {
+                    font-size: 1.15rem;
+                    padding: 0 1.5rem;
+                }
 
-				{heroImage && (
-					<div class="hero-image">
-						<Image src={heroImage} alt={title} />
-					</div>
-				)}
+                .prose :global(h2) {
+                    font-size: 2rem;
+                }
 
-				<div class="prose">
-					<slot />
-				</div>
+                .prose :global(h3) {
+                    font-size: 1.6rem;
+                }
 
-				<div class="back-link">
-					<a href="/blog/">← Back to all articles</a>
-				</div>
-			</article>
-		</main>
+                .prose :global(.image-pair) {
+                    gap: 0.75rem;
+                }
 
-		<Footer />
-	</body>
+                .prose :global(.image-pair .caption) {
+                    font-size: 0.95rem !important;
+                    line-height: 1.4;
+                }
+
+                .prose :global(.image-pair-caption) {
+                    column-gap: 0.75rem;
+                }
+
+                .prose :global(.image-pair-caption > .caption) {
+                    font-size: 0.95rem !important;
+                    line-height: 1.4;
+                }
+
+                .hero-image {
+                    width: calc(100% - 2.5rem);
+                    margin-bottom: 2rem;
+                }
+
+                .back-link {
+                    padding: 0 1.5rem;
+                }
+
+                .lightbox {
+                    padding: 1rem;
+                }
+
+                .lightbox-image {
+                    max-width: 96vw;
+                    max-height: 85vh;
+                }
+
+                .lightbox-close {
+                    top: 0.5rem;
+                    right: 0.75rem;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .lightbox {
+                    transition: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <Header />
+
+        <main>
+            <article>
+                <header class="article-header">
+                    {category && <p class="category">{category}</p>}
+
+                    <h1 class="title">
+                        {titleParts.map((part) =>
+                            filmTitles.some(
+                                (film) => film.toLowerCase() === part.toLowerCase()
+                            ) ? (
+                                <em>{part}</em>
+                            ) : (
+                                part
+                            )
+                        )}
+                    </h1>
+
+                    {description && (
+                        <p class="description">{description}</p>
+                    )}
+
+                    <div class="date">
+                        <FormattedDate date={pubDate} />
+
+                        {updatedDate && (
+                            <div class="last-updated-on">
+                                Last updated on <FormattedDate date={updatedDate} />
+                            </div>
+                        )}
+                    </div>
+
+                    <hr />
+                </header>
+
+                {heroImage && (
+                    <div class="hero-image">
+                        <Image src={heroImage} alt={title} />
+                    </div>
+                )}
+
+                <div class="prose">
+                    <slot />
+                </div>
+
+                <div class="back-link">
+                    <a href="/blog/">← Back to all articles</a>
+                </div>
+            </article>
+        </main>
+
+        <Footer />
+
+        <!-- Image lightbox -->
+        <div
+            class="lightbox"
+            id="image-lightbox"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Expanded image"
+            hidden
+        >
+            <button
+                class="lightbox-close"
+                id="lightbox-close"
+                type="button"
+                aria-label="Close expanded image"
+            >&times;</button>
+
+            <img class="lightbox-image" id="lightbox-image" alt="" />
+        </div>
+
+        <script>
+            const lightbox = document.getElementById('image-lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const closeButton = document.getElementById('lightbox-close');
+
+            let previousFocusedElement = null;
+
+            function openLightbox(image) {
+                if (!lightbox || !lightboxImage) return;
+
+                previousFocusedElement = document.activeElement;
+
+                lightboxImage.src = image.currentSrc || image.src;
+                lightboxImage.alt = image.alt || '';
+
+                lightbox.hidden = false;
+                document.body.style.overflow = 'hidden';
+
+                closeButton?.focus();
+            }
+
+            function closeLightbox() {
+                if (!lightbox || !lightboxImage || lightbox.hidden) return;
+
+                lightbox.hidden = true;
+                lightboxImage.removeAttribute('src');
+                lightboxImage.alt = '';
+                document.body.style.overflow = '';
+
+                if (previousFocusedElement instanceof HTMLElement) {
+                    previousFocusedElement.focus();
+                }
+            }
+
+            document.addEventListener('click', (event) => {
+                const target = event.target;
+
+                if (!(target instanceof Element)) return;
+
+                const image = target.closest('.hero-image img, .prose img');
+
+                if (image instanceof HTMLImageElement) {
+                    openLightbox(image);
+                }
+            });
+
+            closeButton?.addEventListener('click', closeLightbox);
+
+            lightbox?.addEventListener('click', (event) => {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeLightbox();
+                }
+            });
+        </script>
+    </body>
 </html>
