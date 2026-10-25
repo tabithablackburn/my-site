@@ -1,70 +1,69 @@
----
-import { SITE_TITLE } from '../consts';
 
+---
 const path = Astro.url.pathname;
 ---
 
 <header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="links">
-			<a href="/" class={path === '/' ? 'active' : ''}>Home</a>
-			<a href="/blog" class={path.startsWith('/blog') ? 'active' : ''}>Writing</a>
-			<a href="/projects" class={path.startsWith('/projects') ? 'active' : ''}>Projects</a>
-			<a href="/cv" class={path.startsWith('/cv') ? 'active' : ''}>CV</a>
-		</div>
-	</nav>
+        <nav>
+                <h2><a href="/">Tabitha Blackburn</a></h2>
+                <div class="links">
+                        <a href="/" class={path === '/' ? 'active' : ''}>Home</a>
+                        <a href="/blog" class={path.startsWith('/blog') ? 'active' : ''}>Writing</a>
+                        <a href="/projects" class={path.startsWith('/projects') ? 'active' : ''}>Projects</a>
+                        <a href="/cv" class={path.startsWith('/cv') ? 'active' : ''}>CV</a>
+                </div>
+        </nav>
 </header>
 
 <style>
-	header {
-		margin: 0;
-		padding: 1.25rem 2rem;
-		background: #960714;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1rem;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.6rem;
-		font-weight: 400;
-	}
-	h2 a,
-	h2 a:hover {
-		color: #fff58f;
-		text-decoration: none;
-	}
-	.links {
-		display: flex;
-		gap: 2rem;
-	}
-	.links a {
-		color: #fff58f;
-		text-decoration: none;
-		font-size: 1.4rem;
-		padding-bottom: 0.2rem;
-		border-bottom: 2px solid transparent;
-	}
-	.links a:hover,
-	.links a.active {
-		color: #fff58f;
-		border-bottom-color: #fff58f;
-	}
-	@media (max-width: 700px) {
-		header {
-			padding: 1rem;
-		}
-		nav {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		.links {
-			flex-wrap: wrap;
-			gap: 1.25rem;
-		}
-	}
+        header {
+                margin: 0;
+                padding: 1.25rem 2rem;
+                background: #960714;
+        }
+        nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+        }
+        h2 {
+                margin: 0;
+                font-size: 1.6rem;
+                font-weight: 400;
+        }
+        h2 a,
+        h2 a:hover {
+                color: #fff58f;
+                text-decoration: none;
+        }
+        .links {
+                display: flex;
+                gap: 2rem;
+        }
+        .links a {
+                color: #fff58f;
+                text-decoration: none;
+                font-size: 1.4rem;
+                padding-bottom: 0.2rem;
+                border-bottom: 2px solid transparent;
+        }
+        .links a:hover,
+        .links a.active {
+                color: #fff58f;
+                border-bottom-color: #fff58f;
+        }
+        @media (max-width: 700px) {
+                header {
+                        padding: 1rem;
+                }
+                nav {
+                        flex-direction: column;
+                        align-items: flex-start;
+                }
+                .links {
+                        flex-wrap: wrap;
+                        gap: 1.25rem;
+                }
+        }
 </style>
