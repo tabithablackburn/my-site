@@ -1,6 +1,6 @@
 ---
 title: "Design in Stanley Kubrick's 2001: A Space Odyssey (1968)"
-description: "From Arne Jacobsen flatware to Olivier Morgue Djinn chairs, the sets of Stanley Kubrick’s 2001: A Space Odyssey represent the very best of space age design within its own cultural moment."
+description: "With Artemis II, the first crewed mission around the moon since Apollo 17 in 1972, only a month away, now is an apt time to revisit the space age sets of Stanley Kubrick's 2001: A Space Odyssey (1968)."
 pubDate: 2026-03-03
 updatedDate: 2026-03-07
 category: "Set Decoration"
@@ -13,19 +13,17 @@ From Arne Jacobsen flatware to Olivier Morgue Djinn chairs, the sets of Stanley 
 
 ![Olivier Morgue Djinn chairs in Space Station V](./djinn-chairs.jpg)
 
-<p class="caption">Olivier Morgue, double and single seater Djinn chairs for Airborne International, 1965. Pictured alongside Tulip-style tables after Eero Saarinen in the Hilton lobby of Space Station V on the set of *2001: A Space Odyssey*. Image: © Warner Bros. Entertainment Inc.</p>
+<p class="caption">Olivier Morgue, double and single seater Djinn chairs for Airborne International, 1965. Pictured alongside Tulip-style tables after Eero Saarinen in the Hilton lobby of Space Station V on the set of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</p>
 
 ![The blue conference room in 2001: A Space Odyssey](./blue-conference-room.jpg)
 
-<p class="caption">The blue conference room in *2001: A Space Odyssey*, complete with Geoffrey Harcourt Model 042 lounge chairs for Artifort, 1963. Image: © Warner Bros. Entertainment Inc.</p>
+<p class="caption">The blue conference room in <em>2001: A Space Odyssey</em>, complete with Geoffrey Harcourt Model 042 lounge chairs for Artifort, 1963. Image: © Warner Bros. Entertainment Inc.</p>
 
-Whilst tapping into the realm of technological impossibility, such sets as the spherical interiors of the Pan Am “space clipper”, commissioned by Kubrick of NASA designer Harry Lange, are, crucially for Kubrick, both structurally and stylistically plausible.
-
-These attributes both bind the film further to its historical context, with the preparations for the 1969 Apollo 11 moon landing going on over the course of its production, and set it apart from other science-fiction films of the 1960s, which were more fantastical in style.
+Whilst tapping into the realm of technological impossibility, such sets as the spherical interiors of the Pan Am “space clipper”, commissioned by Kubrick of NASA designer Harry Lange, are, crucially for Kubrick, both structurally and stylistically plausible. These attributes both bind the film further to its historical context, with the preparations for the 1969 Apollo 11 moon landing going on over the course of its production, and set it apart from other science-fiction films of the 1960s, which were more fantastical in style.
 
 ![Arne Jacobsen stainless steel flatware used in the film](./jacobsen-flatware-film.jpg)
 
-<p class="caption">Arne Jacobsen stainless steel flatware for Georg Jensen, 1957. Used by the Jupiter Mission crew onboard Discovery I in *2001: A Space Odyssey*. Image: © Warner Bros. Entertainment Inc.</p>
+<p class="caption">Arne Jacobsen stainless steel flatware for Georg Jensen, 1957. Used by the Jupiter Mission crew onboard Discovery I in <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</p>
 
 ![Arne Jacobsen stainless steel flatware](./jacobsen-flatware-original.jpg)
 
@@ -44,10 +42,10 @@ At the same time, Kubrick’s extreme perfectionism and commitment to realism do
 <div class="image-pair">
   <figure>
     <img src="/src/content/blog/2001-a-space-odyssey/monolith-opening.jpg" alt="The black monolith appearing amongst the apes in the opening scenes of 2001: A Space Odyssey" />
-    <figcaption class="caption">The black monolith appearing amongst the apes in the opening scenes of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</figcaption>
+    <figcaption class="caption">Left: The black monolith appearing amongst the apes in the opening scenes of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</figcaption>
   </figure>
   <figure>
     <img src="/src/content/blog/2001-a-space-odyssey/monolith-ending.jpg" alt="The black monolith appearing at the foot of Dave Bowman's bed in the final scenes of 2001: A Space Odyssey" />
-    <figcaption class="caption">The black monolith appearing at the foot of Dave Bowman’s bed in the final scenes of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</figcaption>
+    <figcaption class="caption">Right: The back monolith appearing at the foot of Dave Bowman’s bed in the final scenes of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</figcaption>
   </figure>
 </div>

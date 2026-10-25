@@ -1,4 +1,3 @@
-
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
@@ -18,7 +17,7 @@ const {
     category,
 } = Astro.props;
 
-/* Film titles to italicise automatically in article headings. */
+/* Film titles to italicise automatically in article headings and descriptions. */
 const filmTitles = [
     'The Moonwalkers: A Journey with Tom Hanks',
     '2001: A Space Odyssey',
@@ -28,15 +27,19 @@ const filmTitles = [
 
 /* Match film titles, longest first, without altering the title text. */
 const filmTitlePattern = new RegExp(
-    `(${filmTitles
-        .slice()
-        .sort((a, b) => b.length - a.length)
-        .map((film) => film.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-        .join('|')})`,
+    '(' +
+        filmTitles
+            .slice()
+            .sort((a, b) => b.length - a.length)
+            .join('|') +
+        ')',
     'gi'
 );
 
 const titleParts = title.split(filmTitlePattern);
+const descriptionParts = description
+    ? description.split(filmTitlePattern)
+    : [];
 ---
 
 <!doctype html>
@@ -461,7 +464,18 @@ const titleParts = title.split(filmTitlePattern);
                     </h1>
 
                     {description && (
-                        <p class="description">{description}</p>
+                        <p class="description">
+                            {descriptionParts.map((part) =>
+                                filmTitles.some(
+                                    (film) =>
+                                        film.toLowerCase() === part.toLowerCase()
+                                ) ? (
+                                    <em>{part}</em>
+                                ) : (
+                                    part
+                                )
+                            )}
+                        </p>
                     )}
 
                     <div class="date">

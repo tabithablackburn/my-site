@@ -6,58 +6,116 @@ import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 const allPosts = await getCollection('blog');
+
 allPosts.sort(function (a, b) {
-	return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
+    return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
 });
 
+const filmTitles = [
+    'The Moonwalkers: A Journey with Tom Hanks',
+    '2001: A Space Odyssey',
+    'Wuthering Heights',
+    'Barbarella',
+];
+
+const filmTitlePattern = new RegExp(
+    '(' +
+        filmTitles
+            .slice()
+            .sort((a, b) => b.length - a.length)
+            .join('|') +
+        ')',
+    'gi'
+);
+
 const items = allPosts.slice(0, 3).map(function (post) {
-	return {
-		href: '/blog/' + post.id + '/',
-		title: post.data.title,
-		image: post.data.heroImage ? post.data.heroImage.src : '',
-		date: post.data.pubDate.toLocaleDateString('en-GB', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-		}),
-	};
+    return {
+        href: '/blog/' + post.id + '/',
+        title: post.data.title,
+        image: post.data.heroImage ? post.data.heroImage.src : '',
+        date: post.data.pubDate.toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+        }),
+    };
 });
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section class="intro">
-				<h1>Tabitha Blackburn</h1>
-				<p>
-					I am a researcher in furniture, interior, and design history, currently working on a collaborative PhD at the Victoria and Albert Museum (V&A) and UCL.
-				</p>
-				<p>
-					My PhD focuses on craft and migration in Britain in the long eighteenth century. It is funded by the Arts and Humanities Research Council (AHRC) via the Collaborative Doctoral Partnership (CDP) scheme.
-				</p>
-			</section>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 
-			<section class="latest">
-				<h2>Latest Posts</h2>
-				<ul class="cards">
-					{items.map((item) => (
-						<li class="card">
-							<a href={item.href}>
-								{item.image && <img src={item.image} alt="" />}
-								<h3>{item.title}</h3>
-								<p class="date">{item.date}</p>
-							</a>
-						</li>
-					))}
-				</ul>
-				<p class="more"><a href="/blog">All Posts &rarr;</a></p>
-			</section>
-		</main>
-		<Footer />
-	</body>
+        <style>
+            /* Show the complete latest-post images without cropping. */
+            .cards .card img {
+                display: block;
+                width: 100%;
+                height: auto;
+                aspect-ratio: auto;
+                object-fit: contain;
+            }
+        </style>
+    </head>
+
+    <body>
+        <Header />
+
+        <main>
+            <section class="intro">
+                <h1>Tabitha Blackburn</h1>
+
+                <p>
+                    I am a researcher in furniture, interior, and design history, currently working on a collaborative PhD at the Victoria and Albert Museum (V&A) and UCL.
+                </p>
+
+                <p>
+                    My PhD focuses on craft and migration in Britain in the long eighteenth century. It is funded by the Arts and Humanities Research Council (AHRC) via the Collaborative Doctoral Partnership (CDP) scheme.
+                </p>
+            </section>
+
+            <section class="latest">
+                <h2>Latest Posts</h2>
+
+                <ul class="cards">
+                    {items.map((item) => {
+                        const titleParts = item.title.split(filmTitlePattern);
+
+                        return (
+                            <li class="card">
+                                <a href={item.href}>
+                                    {item.image && (
+                                        <img src={item.image} alt="" />
+                                    )}
+
+                                    <h3>
+                                        {titleParts.map((part) =>
+                                            filmTitles.some(
+                                                (film) =>
+                                                    film.toLowerCase() ===
+                                                    part.toLowerCase()
+                                            ) ? (
+                                                <em>{part}</em>
+                                            ) : (
+                                                part
+                                            )
+                                        )}
+                                    </h3>
+
+                                    <p class="date">{item.date}</p>
+                                </a>
+                            </li>
+                        );
+                    })}
+                </ul>
+
+                <p class="more">
+                    <a href="/blog">All Posts &rarr;</a>
+                </p>
+            </section>
+        </main>
+
+        <Footer />
+    </body>
 </html>
