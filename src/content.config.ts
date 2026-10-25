@@ -1,4 +1,3 @@
-
 import { glob } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
 
@@ -15,7 +14,7 @@ const blog = defineCollection({
 				.enum([
 					'Long 18th Century',
 					'20th Century',
-					'Via Francigena',
+					'Set Decoration',
 				])
 				.optional(),
 		}),
