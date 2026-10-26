@@ -1,4 +1,3 @@
 
-export const SITE_TITLE = 'Tabitha Blackburn | Doctoral Researcher, V&A / UCL';
-
-export const SITE_DESCRIPTION = 'Articles and posts about design, craft, interior, and architectural history by Tabitha Blackburn.';
+export const SITE_TITLE = 'Tabitha Blackburn | Design History and Portfolio';
+export const SITE_DESCRIPTION = 'Design history, writing and research by Tabitha Blackburn.';
