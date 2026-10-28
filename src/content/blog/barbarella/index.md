@@ -40,11 +40,11 @@ Behind her, the reproduction of a section of Georges Seurat’s pointillist pain
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/barbarella/cockpit-seurat.jpg" alt="Barbarella kneeling in the shagpile cockpit before a reproduction of Seurat's painting and a kinetic sheet metal mosaic panel" />
+    <img src="/images/blog/barbarella/cockpit-seurat.jpg" alt="Barbarella kneeling in the shagpile cockpit before a reproduction of Seurat's painting and a kinetic sheet metal mosaic panel" />
     <figcaption class="caption">Left: Barbarella (Jane Fonda) kneeling in the shagpile cockpit of her spaceship before a reproduction of George Seurat’s <em>Afternoon on the Island of La Grande Jatte</em> (1884–86) and a kinetic sheet metal mosaic panel. Image: Carlo Bavagnoli / The LIFE Picture Collection.</figcaption>
   </figure>
   <figure>
-    <img src="/src/content/blog/barbarella/paco-rabanne-leotard.jpg" alt="Barbarella wearing a three-tone green chain-link sheet metal leotard designed by Paco Rabanne" />
+    <img src="/images/blog/barbarella/paco-rabanne-leotard.jpg" alt="Barbarella wearing a three-tone green chain-link sheet metal leotard designed by Paco Rabanne" />
     <figcaption class="caption">Right: Barbarella (Jane Fonda), posing in a three-tone green, chain-link sheet metal leotard designed by Paco Rabanne. Image: Carlo Bavagnoli / The LIFE Picture Collection.</figcaption>
   </figure>
 </div>
@@ -73,10 +73,10 @@ In the *Barbarella* set as in Panton’s lighting, natural materials with an org
 
 <div class="image-pair-caption">
   <figure>
-    <img src="/src/content/blog/barbarella/panton-shell-chandelier-film.jpg" alt="Verner Panton's shell chandelier featured in On Her Majesty's Secret Service, with a woman to its right" />
+    <img src="/images/blog/barbarella/panton-shell-chandelier-film.jpg" alt="Verner Panton's shell chandelier featured in On Her Majesty's Secret Service, with a woman to its right" />
   </figure>
   <figure>
-    <img src="/src/content/blog/barbarella/panton-shell-chandelier-original.jpg" alt="The original Verner Panton shell chandelier from the Fun series, 1964" />
+    <img src="/images/blog/barbarella/panton-shell-chandelier-original.jpg" alt="The original Verner Panton shell chandelier from the Fun series, 1964" />
   </figure>
   <p class="caption">Verner Panton, shell chandelier from the Fun series, 1964, as featured in Peter R. Hunt’s <em>On Her Majesty’s Secret Service</em> (1969).</p>
 </div>
@@ -87,11 +87,11 @@ Similarly, the extravagant, indefinable furniture forms that pervade of Sogo’s
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/barbarella/sogo-inflatable-forms.jpg" alt="The Great Tyrant standing in front of inflatable PVC forms in the Sogo set" />
+    <img src="/images/blog/barbarella/sogo-inflatable-forms.jpg" alt="The Great Tyrant standing in front of inflatable PVC forms in the Sogo set" />
     <figcaption class="caption">Left: The Great Tyrant (Anita Pallenberg) standing in front of inflatable PVC forms in the Sogo set. Image: Carlo Bavagnoli / The LIFE Picture Collection.</figcaption>
   </figure>
   <figure>
-    <img src="/src/content/blog/barbarella/quasar-inflatable-furniture.jpg" alt="Quasar Khanh and his family on inflatable furniture in a transparent pavilion designed by Quasar" />
+    <img src="/images/blog/barbarella/quasar-inflatable-furniture.jpg" alt="Quasar Khanh and his family on inflatable furniture in a transparent pavilion designed by Quasar" />
     <figcaption class="caption">Right: Quasar Khanh and his family on inflatable furniture in a transparent pavilion designed by Quasar, photographed for <em>Vogue</em>, January 1970. Image: Maurice Hogenboom.</figcaption>
   </figure>
 </div>

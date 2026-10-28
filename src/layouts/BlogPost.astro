@@ -380,10 +380,31 @@ const descriptionParts = description
                     font-size: 1.3rem;
                 }
 
-                .prose {
-                    font-size: 1.15rem;
-                    padding: 0 1.5rem;
-                }
+               .prose {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.05rem;
+    padding: 0 1.1rem;
+    overflow-wrap: anywhere;
+}
+
+.article-header {
+    box-sizing: border-box;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
+
+.title,
+.description {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.prose :global(img) {
+    max-width: 100%;
+    height: auto;
+}
 
                 .prose :global(h2) {
                     font-size: 2rem;

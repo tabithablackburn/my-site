@@ -20,11 +20,11 @@ La Scarzuola is a Piranesian capriccio in three dimensions, an eclectic concocti
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/la-scarzuola/ledoux-theatre.jpg" alt="Claude Nicolas Ledoux, The Interior of the Theatre at Besancon Reflected in the Pupil of an Eye." />
+    <img src="/images/blog/la-scarzuola/ledoux-theatre.jpg" alt="Claude Nicolas Ledoux, The Interior of the Theatre at Besancon Reflected in the Pupil of an Eye." />
     <p class="caption">Claude Nicolas Ledoux (1736–1806), 'The Interior of the Theatre at Besancon Reflected in the Pupil of an Eye', from <em>L'architecture considérée sous le rapport de l'art, des moeurs et de la législation</em>, 1804. Image: Bibliothèque nationale de France</p>
   </figure>
   <figure>
-    <img src="/src/content/blog/la-scarzuola/buzzi-eye.jpg" alt="The eye of ATB (Architetto Tomaso Buzzi) overlooking the Theatre of Bees at La Scarzuola." />
+    <img src="/images/blog/la-scarzuola/buzzi-eye.jpg" alt="The eye of ATB (Architetto Tomaso Buzzi) overlooking the Theatre of Bees at La Scarzuola." />
     <p class="caption">The eye of “ATB” (Architetto Tomaso Buzzi) overlooking the Theatre of Bees at La Scarzuola. Image: author</p>
   </figure>
 </div>
@@ -45,11 +45,11 @@ The visitor should not expect to derive any demystifying details about the archi
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/la-scarzuola/buzzi-signature.jpg" alt="The signature of ATB (Architetto Tomaso Buzzi), La Scarzuola." />
+    <img src="/images/blog/la-scarzuola/buzzi-signature.jpg" alt="The signature of ATB (Architetto Tomaso Buzzi), La Scarzuola." />
     <p class="caption">The signature of "ATB" (Architetto Tomaso Buzzi), La Scarzuola. Image: author</p>
   </figure>
   <figure>
-    <img src="/src/content/blog/la-scarzuola/grande-madre.jpg" alt="La Grande Madre (the Great Mother), forming part of the perimeter wall of the Temple of Eros, La Scarzuola." />
+    <img src="/images/blog/la-scarzuola/grande-madre.jpg" alt="La Grande Madre (the Great Mother), forming part of the perimeter wall of the Temple of Eros, La Scarzuola." />
     <p class="caption">la Grande Madre (the Great Mother), forming part of the perimeter wall of the Temple of Eros, La Scarzuola. Image: author</p>
   </figure>
 </div>

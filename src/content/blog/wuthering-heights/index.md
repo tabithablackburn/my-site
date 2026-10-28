@@ -27,11 +27,11 @@ In material choice, too, the properties are antithetical: the sets of Wuthering 
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/wuthering-heights/wuthering-heights-parlour.jpg" alt="The stone and wood interior of the panelled parlour at Wuthering Heights, with its irregular, rock-cut fireplace." />
+    <img src="/images/blog/wuthering-heights/wuthering-heights-parlour.jpg" alt="The stone and wood interior of the panelled parlour at Wuthering Heights, with its irregular, rock-cut fireplace." />
     <p class="caption">The stone and wood interior of the panelled parlour at Wuthering Heights, with its irregular, rock-cut fireplace at the back of the room. Image: Jaap Buitendijk / Warner Bros.</p>
   </figure>
   <figure>
-    <img src="/src/content/blog/wuthering-heights/thrushcross-red-floor.jpg" alt="The high-shine red vinyl floor of the library at Thrushcross Grange." />
+    <img src="/images/blog/wuthering-heights/thrushcross-red-floor.jpg" alt="The high-shine red vinyl floor of the library at Thrushcross Grange." />
     <p class="caption">The high-shine red vinyl floor of the library at Thrushcross Grange. Image: Jaap Buitendijk / Warner Bros.</p>
   </figure>
 </div>
@@ -49,11 +49,11 @@ With the new sets comes an uncomfortable visual adjustment from historical refer
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/wuthering-heights/cathy-pink-cellophane-dress.jpg" alt="Cathy Earnshaw wearing an iridescent pink cellophane dress." />
+    <img src="/images/blog/wuthering-heights/cathy-pink-cellophane-dress.jpg" alt="Cathy Earnshaw wearing an iridescent pink cellophane dress." />
     <p class="caption">Cathy Earnshaw, played by Margot Robbie, wearing an iridescent pink-tone cellophane dress that strays from Regency period precedents in both silhouette and composition. Image: Jaap Buitendijk / Warner Bros.</p>
   </figure>
   <figure>
-    <img src="/src/content/blog/wuthering-heights/cathy-edgar-dining-room.jpg" alt="Cathy Earnshaw and Edgar Linton in the dining room at Thrushcross Grange." />
+    <img src="/images/blog/wuthering-heights/cathy-edgar-dining-room.jpg" alt="Cathy Earnshaw and Edgar Linton in the dining room at Thrushcross Grange." />
     <p class="caption">Cathy Earnshaw and Edgar Linton, played by Shazad Latif, in the dining room at Thrushcross Grange. Cathy wears an off-the-shoulder, black latex dress that seems little inspired by Regency costume. Image: Jaap Buitendijk / Warner Bros.</p>
   </figure>
 </div>
@@ -92,11 +92,11 @@ Finally, the repeated motif of the doll, which carries over from the public hang
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/wuthering-heights/thrushcross-dining-room.jpg" alt="The dining room at Thrushcross Grange, featuring silver walls and transparent plastic ornaments." />
+    <img src="/images/blog/wuthering-heights/thrushcross-dining-room.jpg" alt="The dining room at Thrushcross Grange, featuring silver walls and transparent plastic ornaments." />
     <p class="caption">The dining room at Thrushcross Grange, featuring walls painted in silver and festooned with transparent plastic elements arranged in a manner emulative of Regency-style plasterwork. Image: Jaap Buitendijk / Warner Bros.</p>
   </figure>
   <figure>
-    <img src="/src/content/blog/wuthering-heights/cathys-skin-bedroom.jpg" alt="Cathy's bedroom at Thrushcross Grange, lined with close-up prints of Margot Robbie's skin." />
+    <img src="/images/blog/wuthering-heights/cathys-skin-bedroom.jpg" alt="Cathy's bedroom at Thrushcross Grange, lined with close-up prints of Margot Robbie's skin." />
     <p class="caption">Cathy’s bedroom at Thrushcross Grange, lined on every surface with close-up prints of Margot Robbie’s skin as a visual pun on the Georgian term ‘skin-room’. Image: Jaap Buitendijk / Warner Bros.</p>
   </figure>
 </div>

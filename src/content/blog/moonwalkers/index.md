@@ -12,7 +12,7 @@ heroImage: "./astronaut-moon-1.jpg"
 
 The *Moonwalkers: A Journey with Tom Hanks* (2025) is an immersive, hour-long cinematic experience at London’s Lightroom that makes use of projectors on every surface of its large subterranean exhibition space to tell of the significance of the 1969-1972 Apollo moon landings. At its core a documentary, co-written by narrator, Tom Hanks, and filmmaker Christopher Riley, and directed by Lysander Ashton and Nick Corrigan, *The Moonwalkers* also anticipates NASA’s 10-day Artemis II expedition, the first crewed mission to the moon since Apollo 17 in 1972, set to take off on 1st April 2026. Whilst *The Moonwalkers* upholds one clear narrative theme, focusing on historical and upcoming human expeditions to the moon’s surface and orbit, it does not offer a scientific, technically informative, nor even particularly contextualised account of either. Yet empirical, instructive documentary storytelling is not the point of *The Moonwalkers*, which, instead, takes advantage of the Lightroom’s engendering a sense of total visual envelopment to present mesmerising images of the lunar landscape, footage of earth from space, and the spectacle of space exploration itself, on the jumbo scale they merit.
 
-<img src="/src/content/blog/moonwalkers/astronaut-moon-2.jpg" alt="An Apollo astronaut walking on the surface of the moon" />
+<img src="/images/blog/moonwalkers/astronaut-moon-2.jpg" alt="An Apollo astronaut walking on the surface of the moon" />
 
 <p class="caption">An Apollo austronaut walking on the surface of the moon: close-up image. Still from The Moonwalkers: A Journey with Tom Hanks at the Lightroom, London. Image: Justin Sutcliffe/Lightroom.</p>
 
@@ -20,18 +20,18 @@ The documentary opens with a focus on the moon as an object of human fascination
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/moonwalkers/earth-from-space.jpg" alt="The earth’s surface as seen from outer space" />
+    <img src="/images/blog/moonwalkers/earth-from-space.jpg" alt="The earth’s surface as seen from outer space" />
     <figcaption class="caption">Left: The earth’s surface as seen from outer space. Still from The Moonwalkers: A Journey with Tom Hanks at the Lightroom, London. Image: Justin Sutcliffe/Lightroom.</figcaption>
   </figure>
   <figure>
-    <img src="/src/content/blog/moonwalkers/earth-from-moon.jpg" alt="The earth as seen from the surface of the moon" />
+    <img src="/images/blog/moonwalkers/earth-from-moon.jpg" alt="The earth as seen from the surface of the moon" />
     <figcaption class="caption">Right: The earth as seen from the surface of the moon. Still from The Moonwalkers: A Journey with Tom Hanks at the Lightroom, London. Image: Justin Sutcliffe/Lightroom.</figcaption>
   </figure>
 </div>
 
 From a visual point of view, *The Moonwalkers* at the Lightroom is nothing short of breathtaking. Especially striking, in the first part of the documentary, is the prolonged scene of the departure of The Saturn V (SA-506) from the Kennedy Space Centre, plunging into a thalassic blue sky until it is little more than a minute spark with a slight, trailing wake. Soon afterwards, wide shots of the earth’s marble-like surface, a rolling blue ball depicted from outer space, are accompanied by exhilarating classical music that injects something of the flavour of *2001: A Space Odyssey* into the space scenes. After what, Tom Hanks explains, is a four day voyage across the ocean of stars from the surface of the earth to that of the moon, the staggeringly rudimentary Lunar Module Eagle, occupied by Apollo 11 astronauts Neil Armstrong and Buzz Aldrin, pops up on the walls, its little aluminium feet the first to gather moondust. What follows is the series of high-definition stills taken over the course of the Apollo missions, and these, undoubtedly, are the highlight of *The Moonwalkers*. Given the practical nonexistence of atmosphere on the moon, and, by extension, the total lack of air or dust in between the camera’s lens and its subject, these images are exquisitely clear. In shots of the lunar landscape with its rolling hills and valleys, almost familiar but for their absolute stillness and eerily cool grey colouring, the moon emerges as a phenomenon situated somewhere between closeness and distance, tangibility and total, immeasurable, mind-boggling mystery.
 
-<img src="/src/content/blog/moonwalkers/astronaut-lunar-experiment.jpg" alt="An Apollo astronaut conducting a scientific experiment on the surface of the moon" />
+<img src="/images/blog/moonwalkers/astronaut-lunar-experiment.jpg" alt="An Apollo astronaut conducting a scientific experiment on the surface of the moon" />
 
 <p class="caption">An Apollo astronaut conducting a scientific experiment on the surface of the moon. Still from The Moonwalkers: A Journey with Tom Hanks at the Lightroom, London. Image: Justin Sutcliffe/Lightroom.</p>
 

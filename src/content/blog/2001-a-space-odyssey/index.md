@@ -41,11 +41,11 @@ At the same time, Kubrick’s extreme perfectionism and commitment to realism do
 
 <div class="image-pair">
   <figure>
-    <img src="/src/content/blog/2001-a-space-odyssey/monolith-opening.jpg" alt="The black monolith appearing amongst the apes in the opening scenes of 2001: A Space Odyssey" />
+    <img src="/images/blog/2001-a-space-odyssey/monolith-opening.jpg" alt="The black monolith appearing amongst the apes in the opening scenes of 2001: A Space Odyssey" />
     <figcaption class="caption">Left: The black monolith appearing amongst the apes in the opening scenes of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</figcaption>
   </figure>
   <figure>
-    <img src="/src/content/blog/2001-a-space-odyssey/monolith-ending.jpg" alt="The black monolith appearing at the foot of Dave Bowman's bed in the final scenes of 2001: A Space Odyssey" />
+    <img src="/images/blog/2001-a-space-odyssey/monolith-ending.jpg" alt="The black monolith appearing at the foot of Dave Bowman's bed in the final scenes of 2001: A Space Odyssey" />
     <figcaption class="caption">Right: The back monolith appearing at the foot of Dave Bowman’s bed in the final scenes of <em>2001: A Space Odyssey</em>. Image: © Warner Bros. Entertainment Inc.</figcaption>
   </figure>
 </div>
