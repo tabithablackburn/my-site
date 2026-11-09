@@ -53,7 +53,7 @@ In 2019, Saarinen’s building reopened its doors as the glossy new TWA hotel. I
 
 Whilst it cannot be denied that the TWA terminal’s recent transmutation into a hotel has swathed the structure in a kind of theme-park adjacent gloss, the building remains today, as it was in from its inception, a hallmark of the spirit of midcentury American postwar optimism. Such an impression abounds in the rhetoric of advancement that pervades the building’s earliest literary coverage in *Architectural Review* and other design journals in the mid-1960s. It also finds expression in its casting in Steven Spielberg’s 2002 film *Catch Me If You Can* as a kind of visual embodiment of the notion of the world at one’s fingertips, its unmistakable carpeted walkways stretching out before a wide-eyed Leonardo di Caprio, disguised as a late 1960s American Airlines pilot, in the moments before his first ever flight.
 
-![Frank Abagnale Jr in Catch Me If You Can on the carpeted walkways of the TWA Flight Center.](./Catch%20me%20if%20you%20Can.jpg)
+![Frank Abagnale Jr in Catch Me If You Can on the carpeted walkways of the TWA Flight Center.](./Catch%20me%20if%20you%20Can.JPG)
 
 <p class="caption">Catch Me If You Can (2002) protagonist Frank Abagnale Jr (Leonardo di Caprio) on the carpeted walkways of the TWA Flight Center. Image via New York Film Locations.</p>
 
