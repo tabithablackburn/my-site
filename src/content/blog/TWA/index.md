@@ -1,4 +1,3 @@
-
 ---
 title: "Eero Saarinen’s TWA Flight Center, 1962: Reflections on the Terminal’s History of Functional Obsolescence and its Glossy New Hotel Transformation"
 description: ""
@@ -13,7 +12,7 @@ heroImage: "./Stoller Exterior.jpg"
 
 So explained Finnish-American architect, Eero Saarinen (1910-1961), during the construction phase of his TWA Flight Centre at John F. Kennedy International Airport (previously Idlewild). Saarinen, who died suddenly in September 1961, never lived to see the terminal’s opening in May of the following year. The Trans World Airlines (TWA) Flight Centre was his ultimate masterstroke: with an organic, dynamic roof consisting of four intersecting concrete shells that billow over vast orthogonal glass sheets, the building represented an uplifting response to the demand for a new kind of structure brought on by recent advancements in commercial air travel, namely, the unit flight terminal.
 
-![The Sunken Lounge inside the former TWA Flight Center, with curved seating beneath the terminal’s sweeping concrete shell and wide windows; the spacious interior feels bright and theatrical.](./Sunken%20Lounge.JPG)
+![The Sunken Lounge, former TWA Flight Center.](./Sunken%20Lounge.JPG)
 
 <p class="caption">The Sunken Lounge, former TWA Flight Center (now the TWA Hotel), JFK Airport, New York. Image via TWA Hotel</p>
 
@@ -21,18 +20,18 @@ Yet despite its potency as an aesthetic symbol of the glamour and marvel of the 
 
 <div class="image-pair">
   <figure>
-    <img src="/images/blog/twa-flight-center/Stoller%20Upper.jpg" alt="View across the upper level of Eero Saarinen’s TWA Flight Center, showing its open interior, broad windows, and sculptural concrete roof; the space feels expansive and light-filled." />
+    <img src="/images/blog/twa-flight-center/Stoller%20Upper.jpg" alt="The upper level of the TWA Flight Center, designed by Eero Saarinen." />
     <p class="caption">Left: The upper level of the TWA Flight Center, JFK Airport, New York. Designed by Eero Saarinen, 1962. Image: © Ezra Stoller, 1962</p>
   </figure>
   <figure>
-    <img src="/images/blog/twa-flight-center/Stoller%20Board.jpg" alt="An arrivals and departures board hangs above an information desk inside the original TWA Flight Center. The board contains travel information, but its lettering is not legible in this view." />
+    <img src="/images/blog/twa-flight-center/Stoller%20Board.jpg" alt="Arrivals and departures board with information desk at the original TWA Flight Center." />
     <p class="caption">Right: Arrivals and departures board with information desk, TWA Flight Center JFK Airport, New York. Designed by Eero Saarinen, 1962. Image: © Library of Congress/Prints & Photographs Division, 1962</p>
   </figure>
 </div>
 
 Becoming more a sensational example of the recurring case of functional obsolescence in airline architecture from the 1960s than one of its great touchstones it had once looked to be, Saarinen’s building officially shut its doors as an operational terminal in 2002. Trans World Airlines had spiralled into bankruptcy in 2001, handing over ownership of the building to American Airlines that same year. 9/11, however, sent shock-waves through the aviation industry strong enough to induce AA to abandon the structure. Once a glittering, cosmopolitan nexus of international air travel, the terminal ‘went dark’ within months, the space remaining out of use for a period of almost two decades.
 
-![The upper level of the former TWA Flight Center, now the TWA Hotel, with its curved concrete roof, broad windows, and open terminal space creating a bright, dramatic interior.](./Knight%20Upper.jpg)
+![The upper level of the former TWA Flight Center, now the TWA Hotel.](./Knight%20Upper.jpg)
 
 <p class="caption">The upper level of the former TWA Flight Center (now the TWA Hotel), JFK Airport, New York. Image: © Steve Knight</p>
 
@@ -42,18 +41,18 @@ In 2019, Saarinen’s building reopened its doors as the glossy new TWA hotel. I
 
 <div class="image-pair">
   <figure>
-    <img src="/images/blog/twa-flight-center/Stoller%20Exterior%20Facade.jpg" alt="Front view of Eero Saarinen’s TWA Flight Center at JFK Airport, with its sweeping concrete roof above a broad glass facade and entrance; the sculptural design makes a striking silhouette." />
+    <img src="/images/blog/twa-flight-center/Stoller%20Exterior%20Facade.jpg" alt="Exterior of the TWA Flight Center from the front, photographed by Ezra Stoller in 1962." />
     <p class="caption">Left: Exterior of the TWA Flight Center from the front, JFK Airport, New York. Designed by Eero Saarinen. Image: © Ezra Stoller, 1962</p>
   </figure>
   <figure>
-    <img src="/images/blog/twa-flight-center/Lubrano%20Ciavarra.jpg" alt="The former TWA Flight Center at JFK Airport beneath the TWA Hotel’s two blue-glass wings, which curve behind and above Saarinen’s concrete terminal; the image highlights the contrast between the historic building and modern additions." />
+    <img src="/images/blog/twa-flight-center/Lubrano%20Ciavarra.jpg" alt="Exterior of the former TWA Flight Center showing the newly added hotel wings." />
     <p class="caption">Right: Exterior of the former TWA Flight Center showing the newly added wings of the TWA Hotel, designed by Lubrano Ciavarra Architects. Image via Lubrano Ciavarra Architects</p>
   </figure>
 </div>
 
 Whilst it cannot be denied that the TWA terminal’s recent transmutation into a hotel has swathed the structure in a kind of theme-park adjacent gloss, the building remains today, as it was in from its inception, a hallmark of the spirit of midcentury American postwar optimism. Such an impression abounds in the rhetoric of advancement that pervades the building’s earliest literary coverage in *Architectural Review* and other design journals in the mid-1960s. It also finds expression in its casting in Steven Spielberg’s 2002 film *Catch Me If You Can* as a kind of visual embodiment of the notion of the world at one’s fingertips, its unmistakable carpeted walkways stretching out before a wide-eyed Leonardo di Caprio, disguised as a late 1960s American Airlines pilot, in the moments before his first ever flight.
 
-![Leonardo DiCaprio as Frank Abagnale Jr walks along the carpeted passageways of the TWA Flight Center in Catch Me If You Can. The sweeping terminal interior gives the scene an optimistic, anticipatory tone; no text is visible.](/.Catch%20me%20if%20you%20Can.JPG)
+![Frank Abagnale Jr in Catch Me If You Can on the carpeted walkways of the TWA Flight Center.](./Catch%20me%20if%20you%20Can.JPG)
 
 <p class="caption">Catch Me If You Can (2002) protagonist Frank Abagnale Jr (Leonardo di Caprio) on the carpeted walkways of the TWA Flight Center. Image via New York Film Locations.</p>
 
@@ -61,7 +60,7 @@ Whether the TWA terminal has ultimately gained from its hotel transformation or 
 
 > ‘If anything happened and they had to stop working right now and just leave it in this state, I think it would make a beautiful ruin, like the Baths of Caracalla.’
 
-![An arrivals and departures board hangs above the information desk in the former TWA Flight Center, now the TWA Hotel. The distinctive terminal interior surrounds the desk, and the board’s lettering is not legible in this view.](./Knight%20Board.jpg)
+![Arrivals and departures board with information desk at the former TWA Flight Center, now the TWA Hotel.](./Knight%20Board.jpg)
 
 <p class="caption">Arrivals and departures board with information desk, former TWA Flight Center (now the TWA Hotel), JFK Airport, New York. Image: © Steve Knight</p>
 
