@@ -17,7 +17,6 @@ const {
     category,
 } = Astro.props;
 
-/* Film titles to italicise automatically in article headings and descriptions. */
 const filmTitles = [
     'The Moonwalkers: A Journey with Tom Hanks',
     '2001: A Space Odyssey',
@@ -25,7 +24,6 @@ const filmTitles = [
     'Barbarella',
 ];
 
-/* Match film titles, longest first, without altering the title text. */
 const filmTitlePattern = new RegExp(
     '(' +
         filmTitles
@@ -143,7 +141,6 @@ const descriptionParts = description
                 margin: 0.5rem 0 0;
             }
 
-            /* Extra space after standalone captions */
             .prose > :global(p.caption) {
                 margin-bottom: 2.5rem;
             }
@@ -257,12 +254,46 @@ const descriptionParts = description
                 margin-top: 0.5rem;
             }
 
+            /* Editorial-style quotations */
             .prose :global(blockquote) {
-                margin: 2rem 0;
-                padding: 0 0 0 1.25rem;
-                border-left: 3px solid #000000;
-                font-size: 1.4rem;
-                line-height: 1.5;
+                max-width: 680px;
+                margin: 3rem auto;
+                padding: 1.5rem 1.25rem;
+                border: none;
+                color: #000000;
+                font-size: 1em;
+                line-height: 1.6;
+                font-style: normal;
+                font-weight: 400;
+                text-align: center;
+                position: relative;
+            }
+
+            .prose :global(blockquote p) {
+                margin: 0;
+                color: #000000;
+                font-size: inherit;
+                font-style: normal;
+            }
+
+            /* Short line above and below the quotation */
+            .prose :global(blockquote)::before,
+            .prose :global(blockquote)::after {
+                content: '';
+                display: block;
+                width: 45px;
+                height: 1px;
+                background: #000000;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .prose :global(blockquote)::before {
+                margin-bottom: 1.5rem;
+            }
+
+            .prose :global(blockquote)::after {
+                margin-top: 1.5rem;
             }
 
             .prose :global(ul),
@@ -380,31 +411,63 @@ const descriptionParts = description
                     font-size: 1.3rem;
                 }
 
-               .prose {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
-    font-size: 1.05rem;
-    padding: 0 1.1rem;
-    overflow-wrap: anywhere;
-}
+                .prose {
+                    box-sizing: border-box;
+                    width: 100%;
+                    max-width: 100%;
+                    font-size: 1.25rem;
+                    line-height: 1.65;
+                    padding: 0 1.1rem;
+                    overflow-wrap: anywhere;
+                }
 
-.article-header {
-    box-sizing: border-box;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-}
+                /* Captions remain italic and smaller than body text */
+                .prose :global(.caption),
+                .prose :global(figcaption) {
+                    font-size: 1.05rem !important;
+                    line-height: 1.45;
+                    font-style: italic;
+                }
 
-.title,
-.description {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-}
+                /* Editorial quotations on mobile */
+                .prose :global(blockquote) {
+                    max-width: 680px;
+                    margin: 2.5rem auto;
+                    padding: 1.25rem 0.5rem;
+                    font-size: 1em;
+                    line-height: 1.5;
+                    text-align: center;
+                }
 
-.prose :global(img) {
-    max-width: 100%;
-    height: auto;
-}
+                .prose :global(blockquote)::before,
+                .prose :global(blockquote)::after {
+                    width: 40px;
+                }
+
+                .prose :global(blockquote)::before {
+                    margin-bottom: 1.25rem;
+                }
+
+                .prose :global(blockquote)::after {
+                    margin-top: 1.25rem;
+                }
+
+                .article-header {
+                    box-sizing: border-box;
+                    padding-left: 1.1rem;
+                    padding-right: 1.1rem;
+                }
+
+                .title,
+                .description {
+                    max-width: 100%;
+                    overflow-wrap: anywhere;
+                }
+
+                .prose :global(img) {
+                    max-width: 100%;
+                    height: auto;
+                }
 
                 .prose :global(h2) {
                     font-size: 2rem;
@@ -419,8 +482,9 @@ const descriptionParts = description
                 }
 
                 .prose :global(.image-pair .caption) {
-                    font-size: 0.95rem !important;
-                    line-height: 1.4;
+                    font-size: 1.05rem !important;
+                    line-height: 1.45;
+                    font-style: italic;
                 }
 
                 .prose :global(.image-pair-caption) {
@@ -428,8 +492,9 @@ const descriptionParts = description
                 }
 
                 .prose :global(.image-pair-caption > .caption) {
-                    font-size: 0.95rem !important;
-                    line-height: 1.4;
+                    font-size: 1.05rem !important;
+                    line-height: 1.45;
+                    font-style: italic;
                 }
 
                 .hero-image {

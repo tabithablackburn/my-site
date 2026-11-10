@@ -1,6 +1,6 @@
 ---
-title: "Eero Saarinen’s TWA Flight Center, 1962: Reflections on the Terminal’s History of Functional Obsolescence and its Glossy New Hotel Transformation"
-description: ""
+title: "Eero Saarinen’s TWA Flight Center, 1962: the Terminal’s History of Functional Obsolescence and its Glossy New Hotel Transformation"
+description: "Saarinen’s landmark TWA Flight Centre of the 1960s has spent much of its history in the dark. Its divisive 2019 hotel transformation has returned it to the public realm, but is commercial resurgence in the shape of a series of a sensationalised jet-age mis-en-scènes necessarily preferable to permanent preservation in monument, or even ruin, form?"
 pubDate: 2026-11-08
 category: "20th Century"
 heroImage: "./Stoller Exterior.jpg"
@@ -29,7 +29,7 @@ Yet despite its potency as an aesthetic symbol of the glamour and marvel of the 
   </figure>
 </div>
 
-Becoming more a sensational example of the recurring case of functional obsolescence in airline architecture from the 1960s than one of its great touchstones it had once looked to be, Saarinen’s building officially shut its doors as an operational terminal in 2002. Trans World Airlines had spiralled into bankruptcy in 2001, handing over ownership of the building to American Airlines that same year. 9/11, however, sent shock-waves through the aviation industry strong enough to induce AA to abandon the structure. Once a glittering, cosmopolitan nexus of international air travel, the terminal ‘went dark’ within months, the space remaining out of use for a period of almost two decades.
+Becoming more a sensational example of the recurring case of functional obsolescence in airline architecture from the 1960s than one of its great touchstones it had once looked to be, Saarinen’s building officially shut its doors as an operational terminal in 2002. Trans World Airlines had spiralled into bankruptcy in 2001, handing over ownership of the building to American Airlines that same year. Come September, however, the 9/11 catastrophe would send shock-waves through the aviation industry strong enough to impel American Airlines to abandon the structure. Once a glittering, cosmopolitan nexus of international air travel, the terminal ‘went dark’ within months, the space remaining out of use for a period of almost two decades.
 
 ![The upper level of the former TWA Flight Center, now the TWA Hotel.](./Knight%20Upper.jpg)
 
