@@ -1,6 +1,6 @@
 ---
 title: "Eero Saarinen’s TWA Flight Center, 1962: the Terminal’s History of Functional Obsolescence and its Glossy New Hotel Transformation"
-description: "Saarinen’s landmark TWA Flight Centre of the 1960s has spent much of its history in the dark. Its divisive 2019 hotel transformation has returned it to the public realm, but is commercial resurgence in the shape of a series of a sensationalised jet-age mis-en-scènes necessarily preferable to permanent preservation in monument, or even ruin, form?"
+description: "Saarinen’s landmark TWA Flight Centre of the 1960s has spent much of its history in the dark. Its divisive 2019 hotel transformation has returned it to the public realm, but is commercial resurgence as a series of a sensationalised jet-age mis-en-scènes preferable to permanent preservation in monument, or even ruin, form?"
 pubDate: 2026-11-08
 category: "20th Century"
 heroImage: "./Stoller Exterior.jpg"
